@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hospital Pharmacy English Master Manual</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#c7d2fe">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Hospital Pharmacy English</h1>
+  <p>Clinical Communication & Medication Counseling</p>
+  <div class="controls">
+    <input id="search" placeholder="Search (e.g. allergy, insulin)">
+    <select id="mode">
+      <option value="full">Training Mode</option>
+      <option value="quick">OPD Quick Mode</option>
+    </select>
+  </div>
+</header>
+
+<main id="content"></main>
+
+<footer>
+  <p>Hospital Pharmacy Clinical Support Tool</p>
+</footer>
+
+<script src="app.js"></script>
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js');
+}
+</script>
+</body>
+</html>

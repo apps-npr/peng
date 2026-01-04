@@ -1,0 +1,43 @@
+
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  background: #f8fafc;
+}
+header {
+  background: linear-gradient(135deg, #c7d2fe, #fbcfe8);
+  padding: 1rem;
+  text-align: center;
+}
+.controls input, .controls select {
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: none;
+  margin: 0.2rem;
+}
+main {
+  max-width: 960px;
+  margin: auto;
+  padding: 1rem;
+}
+section {
+  background: white;
+  border-radius: 16px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+section img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin: 0.75rem 0;
+}
+.upload {
+  border: 2px dashed #e5e7eb;
+  border-radius: 12px;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.85rem;
+}

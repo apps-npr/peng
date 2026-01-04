@@ -1,5 +1,4 @@
 
-let sectionLang = {}; // default = en
 const sections = [
 {
 title:"SECTION 1: Greeting & Patient Identification",
@@ -363,58 +362,71 @@ quick:[
 ];
 
 const content = document.getElementById("content");
-const langSelect = document.getElementById("lang");
 const searchInput = document.getElementById("search");
 const modeSelect = document.getElementById("mode");
+
+// เก็บสถานะภาษาของแต่ละ section
+// default = "en"
+let sectionLang = {};
 
 function render() {
   content.innerHTML = "";
   const mode = modeSelect.value;
-  const lang = (langSelect && langSelect.value) || "en";
   const q = searchInput.value.toLowerCase();
 
-  sections.forEach(s, index) => {
-    if (q && !s.title.toLowerCase().includes(q)) return;
+  sections.forEach((s, index) => {
+    // เลือกภาษา: default EN
+    const currentLang = sectionLang[index] || "en";
+
+    // เลือก source ตามภาษา
+    const source =
+      currentLang === "th" &&
+      typeof sectionsTH !== "undefined" &&
+      sectionsTH[index]
+        ? sectionsTH[index]
+        : s;
+
+    if (q && !source.title.toLowerCase().includes(q)) return;
+
     const sec = document.createElement("section");
-    const lang = sectionLang[index] || "en";
-    const source = lang === "th" ? sectionsTH[index] : sections[index];
+
+    /* ===== SECTION TITLE (LONG-PRESS HERE) ===== */
+    const h2 = document.createElement("h2");
+    h2.textContent = source.title;
+
+    let pressTimer;
+    h2.addEventListener("touchstart", () => {
+      pressTimer = setTimeout(() => {
+        sectionLang[index] = currentLang === "en" ? "th" : "en";
+        render();
+      }, 500); // long-press 0.5s
+    });
+
+    h2.addEventListener("touchend", () => {
+      clearTimeout(pressTimer);
+    });
+
+    sec.appendChild(h2);
+
+    /* ===== IMAGE (ใช้ของเดิม ไม่เปลี่ยน path) ===== */
+    if (s.image) {
+      const img = document.createElement("img");
+      img.src = s.image;
+      img.alt = "section image";
+      sec.appendChild(img);
+    }
+
+    /* ===== LIST ===== */
     const listData = mode === "quick" ? source.quick : source.full;
-    const list = (mode==="quick"?s.quick:s.full)
-      .map(i=>`<li>${i}</li>`).join("");
-    const lang = sectionLang[index] || "en";
-const source = lang === "th" ? sectionsTH[index] : sections[index];
+    const ul = document.createElement("ul");
 
-// ===== h2 (จุดที่ใส่ long-press) =====
-const h2 = document.createElement("h2");
-h2.textContent = source.title;
+    listData.forEach(text => {
+      const li = document.createElement("li");
+      li.textContent = text;
+      ul.appendChild(li);
+    });
 
-let pressTimer;
-h2.addEventListener("touchstart", () => {
-  pressTimer = setTimeout(() => {
-    sectionLang[index] = sectionLang[index] === "th" ? "en" : "th";
-    render();
-  }, 500);
-});
-h2.addEventListener("touchend", () => clearTimeout(pressTimer));
-
-sec.appendChild(h2);
-
-// ===== image (เหมือนเดิม ไม่แตะ path) =====
-if (s.image) {
-  const img = document.createElement("img");
-  img.src = s.image;
-  img.alt = "section image";
-  sec.appendChild(img);
-}
-
-// ===== list =====
-const ul = document.createElement("ul");
-listData.forEach(text => {
-  const li = document.createElement("li");
-  li.textContent = text;
-  ul.appendChild(li);
-});
-sec.appendChild(ul);
+    sec.appendChild(ul);
     content.appendChild(sec);
   });
 }

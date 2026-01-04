@@ -361,11 +361,12 @@ quick:[
   }
 ];
 
+
 const content = document.getElementById("content");
 const searchInput = document.getElementById("search");
 const modeSelect = document.getElementById("mode");
 
-// เก็บสถานะภาษาของแต่ละ section
+// เก็บสถานะภาษาเป็นราย section
 // default = "en"
 let sectionLang = {};
 
@@ -375,10 +376,9 @@ function render() {
   const q = searchInput.value.toLowerCase();
 
   sections.forEach((s, index) => {
-    // เลือกภาษา: default EN
     const currentLang = sectionLang[index] || "en";
 
-    // เลือก source ตามภาษา
+    // เลือก source ตามภาษา (EN / TH)
     const source =
       currentLang === "th" &&
       typeof sectionsTH !== "undefined" &&
@@ -390,7 +390,7 @@ function render() {
 
     const sec = document.createElement("section");
 
-    /* ===== SECTION TITLE (LONG-PRESS HERE) ===== */
+    /* ===== SECTION TITLE (LONG-PRESS) ===== */
     const h2 = document.createElement("h2");
     h2.textContent = source.title;
 
@@ -408,7 +408,7 @@ function render() {
 
     sec.appendChild(h2);
 
-    /* ===== IMAGE (ใช้ของเดิม ไม่เปลี่ยน path) ===== */
+    /* ===== IMAGE (ใช้ path เดิม ไม่แตะรูป) ===== */
     if (s.image) {
       const img = document.createElement("img");
       img.src = s.image;
@@ -427,6 +427,19 @@ function render() {
     });
 
     sec.appendChild(ul);
+
+    /* ===== LANGUAGE TOGGLE BUTTON ===== */
+    const toggleBtn = document.createElement("button");
+    toggleBtn.className = "lang-toggle-btn";
+    toggleBtn.textContent = currentLang === "en" ? "TH" : "EN";
+
+    toggleBtn.addEventListener("click", () => {
+      sectionLang[index] = currentLang === "en" ? "th" : "en";
+      render();
+    });
+
+    sec.appendChild(toggleBtn);
+
     content.appendChild(sec);
   });
 }

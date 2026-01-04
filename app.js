@@ -23,7 +23,7 @@ quick:[
 },
 {
 title:"SECTION 2: History Taking & Initial Assessment",
-image:"/section02.png",
+image:"section02.png",
 full:[
 "What symptoms are you experiencing?",
 "How long have you had these symptoms?",
@@ -40,7 +40,7 @@ quick:[
 },
 {
     title: "SECTION 3: Drug Allergy History Taking",
-    image:"/section03.png",
+    image:"section03.png",
     full:[
       "Do you have any drug allergies?",
       "Which medicine are you allergic to?",
@@ -63,7 +63,7 @@ quick:[
   },
   {
     title: "SECTION 4: Medication Reconciliation",
-    image:"/section04.png",
+    image:"section04.png",
     full: [
       "Can you tell me all the medicines you are currently taking?",
       "Are you taking any over-the-counter medicines?",
@@ -88,7 +88,7 @@ quick:[
   },
   {
     title: "SECTION 5: Hospital Workflow Communication",
-    image:"/section05.png",
+    image:"section05.png",
     full: [
       "Please proceed to the cashier to make your payment.",
       "Please proceed to the finance counter to clear your bill.",
@@ -108,7 +108,7 @@ quick:[
   },
   {
     title: "SECTION 6: Dispensing & General Instructions",
-    image:"/section06.png",
+    image:"section06.png",
     full: [
       "Here is your medication.",
       "Please take this medicine exactly as prescribed.",
@@ -138,7 +138,7 @@ quick:[
   },
   {
     title: "SECTION 7: Route-Specific Counseling",
-    image:"/section07.jpg",
+    image:"section07.png",
     full: [
       "Swallow the tablet whole with a full glass of water.",
       "Apply a thin layer to the affected area. Do not bandage unless told to.",
@@ -156,7 +156,7 @@ quick:[
   },
   {
     title: "SECTION 8: High-Risk Medications",
-    image:"/section08.jpg",
+    image:"section08.png",
     full: [
       "This medicine has a high risk of serious side effects.",
       "Do not stop this medicine suddenly.",
@@ -175,7 +175,7 @@ quick:[
   },
   {
     title: "SECTION 9: Renal / Hepatic Considerations",
-    image:"/section09.jpg",
+    image:"section09.png",
     full: [
       "Do you have kidney or liver disease?",
       "This medicine may need dose adjustment.",
@@ -191,7 +191,7 @@ quick:[
   },
   {
     title: "SECTION 10: Pregnancy & Breastfeeding",
-    image:"/section10.jpg",
+    image:"section10.png",
     full: [
       "Are you pregnant, planning to become pregnant, or breastfeeding?",
       "This medicine is not recommended during pregnancy.",
@@ -206,7 +206,7 @@ quick:[
   },
   {
     title: "SECTION 11: Missed Dose & Overdose",
-    image:"/section11.jpg",
+    image:"section11.png",
     full: [
       "If you miss a dose, take it as soon as you remember.",
       "However, if it is almost time for your next dose, skip the missed one.",
@@ -222,7 +222,7 @@ quick:[
   },
   {
     title: "SECTION 12: Drug Interactions",
-    image:"/section12.jpg",
+    image:"section12.png",
     full: [
       "Avoid milk, calcium, grapefruit, and alcohol.",
       "Avoid drinking milk or taking antacids within 2 hours of this medicine.",
@@ -238,7 +238,7 @@ quick:[
   },
   {
     title: "SECTION 13: Storage & Stability",
-    image:"/section13.jpg",
+    image:"section13.png",
     full: [
       "Store at room temperature.",
       "Keep away from heat, light, and moisture.",
@@ -254,7 +254,7 @@ quick:[
   },
   {
     title: "SECTION 14: Infection Control & Hygiene",
-    image:"/section14.jpg",
+    image:"section14.png",
     full: [
       "Wash your hands thoroughly before and after using this medicine.",
       "Do not share this medicine or device with anyone else.",
@@ -269,7 +269,7 @@ quick:[
   },
   {
     title: "SECTION 15: Side Effects Counseling",
-    image:"/section15.jpg",
+    image:"section15.png",
     full: [
       "This medicine may cause some side effects.",
       "Common side effects include nausea, headache, or dizziness. These usually go away.",
@@ -285,7 +285,7 @@ quick:[
   },
   {
     title: "SECTION 16: Emergency Red Flags",
-    image:"/section16.jpg",
+    image:"section16.png",
     full: [
       "Stop taking the medicine and seek immediate medical help if you have:",
       "- Chest pain or tightness.",
@@ -301,7 +301,7 @@ quick:[
   },
   {
     title: "SECTION 17: Teach-Back",
-    image:"/section17.jpg",
+    image:"section17.png",
     full: [
       "Just to make sure I explained everything clearly, can you tell me how you will take this?",
       "Can you show me how you will use this inhaler?",
@@ -315,7 +315,7 @@ quick:[
   },
   {
     title: "SECTION 18: Documentation Language",
-    image:"/section18.jpg",
+    image:"section18.png",
     full: [
       "Medication counseling provided regarding dosage and side effects.",
       "Patient demonstrated correct inhaler technique.",
@@ -331,7 +331,7 @@ quick:[
   },
   {
     title: "SECTION 19: Pharmacy Vocabulary",
-    image:"/section19.jpg",
+    image:"section19.png",
     full: [
       "Prescription, dosage, frequency, side effect, allergy.",
       "Injection, inhaler, eye drops, ointment, refill.",
@@ -346,7 +346,7 @@ quick:[
   },
   {
     title: "SECTION 20: Closing",
-    image:"/section20.jpg",
+    image:"section20.png",
     full: [
       "Do you have any other questions for me?",
       "Everything is clear? If you have doubts later, feel free to call us.",

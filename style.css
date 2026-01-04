@@ -27,6 +27,9 @@ section {
   margin-bottom: 1.5rem;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
+section h2 {
+  color: #4f46e5;
+}
 section img {
   max-width: 100%;
   border-radius: 12px;

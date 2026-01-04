@@ -2,7 +2,7 @@
 const sections = [
 {
 title:"SECTION 1: Greeting & Patient Identification",
-image:"/section01.jpg",
+image:"/section01.png",
 full:[
 "Hello. How can I help you today?",
 "Hello. I'm the pharmacist. I'd like to explain your medicines today.",
@@ -23,7 +23,7 @@ quick:[
 },
 {
 title:"SECTION 2: History Taking & Initial Assessment",
-image:"/section02.jpg",
+image:"/section02.png",
 full:[
 "What symptoms are you experiencing?",
 "How long have you had these symptoms?",
@@ -40,7 +40,7 @@ quick:[
 },
 {
     title: "SECTION 3: Drug Allergy History Taking",
-    image:"/section03.jpg",
+    image:"/section03.png",
     full:[
       "Do you have any drug allergies?",
       "Which medicine are you allergic to?",
@@ -63,7 +63,7 @@ quick:[
   },
   {
     title: "SECTION 4: Medication Reconciliation",
-    image:"/section04.jpg",
+    image:"/section04.png",
     full: [
       "Can you tell me all the medicines you are currently taking?",
       "Are you taking any over-the-counter medicines?",
@@ -88,7 +88,7 @@ quick:[
   },
   {
     title: "SECTION 5: Hospital Workflow Communication",
-    image:"/section05.jpg",
+    image:"/section05.png",
     full: [
       "Please proceed to the cashier to make your payment.",
       "Please proceed to the finance counter to clear your bill.",
@@ -108,7 +108,7 @@ quick:[
   },
   {
     title: "SECTION 6: Dispensing & General Instructions",
-    image:"/section06.jpg",
+    image:"/section06.png",
     full: [
       "Here is your medication.",
       "Please take this medicine exactly as prescribed.",

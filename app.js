@@ -2,7 +2,7 @@
 const sections = [
 {
 title:"SECTION 1: Greeting & Patient Identification",
-image:"images/section1.jpg",
+image:"section01.jpg",
 full:[
 "Hello. How can I help you today?",
 "Hello. I'm the pharmacist. I'd like to explain your medicines today.",
@@ -17,7 +17,7 @@ quick:[
 },
 {
 title:"SECTION 2: History Taking & Initial Assessment",
-image:"images/section2.jpg",
+image:"section02.jpg",
 full:["What symptoms are you experiencing?"],
 quick:["What symptoms do you have?"]
 }

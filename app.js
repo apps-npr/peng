@@ -379,7 +379,6 @@ function render() {
       <h2>${s.title}</h2>
       ${s.image ? `<img src="${s.image}" alt="section image">` : ""}
       <ul>${list}</ul>
-      <div class="upload">Replace image by updating file in /images folder</div>
     `;
     content.appendChild(sec);
   });

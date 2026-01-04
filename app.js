@@ -362,12 +362,14 @@ quick:[
 ];
 
 const content = document.getElementById("content");
+const langSelect = document.getElementById("lang");
 const searchInput = document.getElementById("search");
 const modeSelect = document.getElementById("mode");
 
 function render() {
   content.innerHTML = "";
   const mode = modeSelect.value;
+  const lang = (langSelect && langSelect.value) || "en";
   const q = searchInput.value.toLowerCase();
 
   sections.forEach(s => {

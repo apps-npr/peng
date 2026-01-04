@@ -2,7 +2,7 @@
 const sections = [
 {
 title:"SECTION 1: Greeting & Patient Identification",
-image:"/section01.png",
+image:"section01.png",
 full:[
 "Hello. How can I help you today?",
 "Hello. I'm the pharmacist. I'd like to explain your medicines today.",
